@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation, useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 
 import { MoviesList } from 'components/MoviesList/MoviesList';
 import { SearchForm } from 'components/SearchForm/SearchForm';
@@ -11,8 +11,7 @@ const Movies = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isSearchDone, setIsSearchDone] = useState(false);
 
-  const location = useLocation();
-
+  
   const [searchParams, setSearchParams] = useSearchParams();
   const query = searchParams.get('query');
 
@@ -41,7 +40,7 @@ const Movies = () => {
       <SearchForm onSubmit={setSearchParams} />
       {isLoading && <div>Loading...</div>}
       {!isLoading && !!searchResults.length && (
-        <MoviesList movies={searchResults} state={location} />
+        <MoviesList movies={searchResults}/>
       )}
       {isSearchDone && !searchResults.length && 'No movies found.'}
     </div>
