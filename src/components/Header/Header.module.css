@@ -1,0 +1,33 @@
+/* Header.module.css */
+.header {
+  background-color: #20232a;
+  padding: 16px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navItem:not(:last-child) {
+  margin-right: 20px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #61dafb;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navLink:hover,
+.navLink.active {
+  color: #fff;
+  background-color: #61dafb;
+}

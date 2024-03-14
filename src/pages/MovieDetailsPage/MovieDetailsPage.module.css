@@ -1,0 +1,28 @@
+.detailsContainer {
+  display: flex;
+  gap: 24px;
+  padding: 24px 0;
+}
+
+.imageContainer {
+  width: 500px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+.genresList {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.additionalLinksWrapper {
+  border: 2px solid gray;
+  border-right: none;
+  border-left: none;
+}

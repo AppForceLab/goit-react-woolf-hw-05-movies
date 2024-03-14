@@ -1,0 +1,18 @@
+.moviesPage {
+    padding: 20px;
+  }
+  
+  .searchForm {
+    margin-bottom: 20px;
+  }
+  
+  .searchInput {
+    margin-right: 10px;
+    padding: 8px;
+  }
+  
+  .searchButton {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
